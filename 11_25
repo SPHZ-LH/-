@@ -18,3 +18,13 @@ int main(void)
 
 	return 0;
 }
+#include<stdio.h>
+int main(void)
+{
+	int age = 20;
+	if (age < 18)
+		printf("未成年\n");
+	else (age > 18);
+		printf("成年\n");
+	return 0;
+}
