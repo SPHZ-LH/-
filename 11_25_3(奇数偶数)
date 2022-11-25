@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(void)
+{
+	int a,c;
+	scanf_s("%d",&a);
+	int b = 2;
+		c = a % b;
+	if (c == 1)
+		printf("奇数\n");
+	else
+		printf("偶数\n");
+		return 0;
+}
