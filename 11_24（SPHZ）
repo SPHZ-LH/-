@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(void)
 {
-  printf("Hello,SPHZ");
+  printf("大家好，我是SPHZ");
   return 0;
 }
