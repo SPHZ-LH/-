@@ -4,12 +4,13 @@ int main(void)
 	int i, n;
 	int x = 1;
 	int y = 0;
+	printf("输入：");
 	scanf_s("%d",&n);
 	for (i=1;i<=n; i++)
 	{
 		x = x * i;
 		y = x + y;
 	}
-	printf("y=%d\n",y);
+	printf("结果：%d\n",y);
 	return 0;
 }
