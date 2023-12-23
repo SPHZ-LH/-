@@ -28,6 +28,6 @@ num1 = int(list[0])
 num2 = int(list[1])
 count = 0
 for i in range(num1, num2 + 1):
-    count=method(count, i)
+    count = method(count, i)
 if count == 0:
     print("None")

@@ -1,29 +1,18 @@
-list = input().split(" ")
+n, m = map(int, input().split())
+strlist, flag = [], True
+for i in range(n):  # 输入的矩阵
+    strlist.append(list(map(int, input().split())))
 
-rows = int(list[0])
-columns = int(list[1])
+for i in range(1, n - 1):
+    for j in range(1, m - 1):
+        if (
+            strlist[i][j] > strlist[i - 1][j]
+            and strlist[i][j] > strlist[i + 1][j]
+            and strlist[i][j] > strlist[i][j - 1]
+            and strlist[i][j] > strlist[i][j + 1]
+        ):
+            flag = False
+            print(strlist[i][j], i + 1, j + 1)
 
-colslist = [0] * columns
-rowslist = [0] * rows
-
-count = 0
-for i in rowslist:
-    rowslist[count] = colslist
-    count += 1
-
-for i in range(rows):
-    list = input().split(" ")
-    count = 0
-    for j in list:
-        rowslist[i][count] = j
-        count += 1
-    print(rowslist)
-
-# list= [0]*5
-# mylist=[0]*4
-# mylist[0]=list
-# mylist[1]=list
-# mylist[2]=list
-# mylist[3]=list
-# for i in mylist:
-#     print(i)
+if flag:
+    print("None", n, m)
